@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <!-- Primera sección de contenido -->
+  <div class="section section-1" style="background-image: url('{{ url_for('static', filename='img/imagen-fondo-seccion-1.jpg') }}');">
+    <div class="content-wrapper">
+      <h1>Título de la sección</h1>
+      <p>Descripción de la sección</p>
+      <button class="cta-button">Ver más</button>
+    </div>
+  </div>
+
+  <!-- Segunda sección de contenido -->
+  <div class="section section-2" style="background-image: url('{{ url_for('static', filename='img/imagen-fondo-seccion-2.jpg') }}');">
+    <div class="content-wrapper">
+      <h1>Título de la segunda sección</h1>
+      <p>Descripción de la segunda sección</p>
+      <button class="cta-button">Ver más</button>
+    </div>
+  </div>
+{% endblock %}

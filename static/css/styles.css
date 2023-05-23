@@ -1,0 +1,115 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para la barra de navegación */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px;
+  }
+  
+  .navbar img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: -10px; /* Margen izquierdo negativo */
+  }
+  
+  .navbar li {
+    margin-right: 10px;
+  }
+  
+  .navbar li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    font-family: 'Ebrima', sans-serif;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos para las secciones de contenido */
+  .section {
+    height: calc(100vh - 80px); /* Calcula la altura de la sección teniendo en cuenta la altura de la barra de navegación */
+    width: 100%; /* Ajusta la sección para ocupar todo el ancho de la página */
+    padding: 0; /* Elimina el relleno interno de la sección */
+    margin: 0; /* Elimina los márgenes de la sección */
+    display: flex; /* Hace que los elementos internos se distribuyan horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos internos */
+    background-position: center; /* Centra el fondo de la sección */
+    background-repeat: no-repeat; /* Evita la repetición del fondo */
+    background-size: cover; /* Ajusta el tamaño del fondo para cubrir toda la sección */
+  }
+  
+  .section .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff; /* Ajusta el color del texto en la sección */
+  }
+  
+  .section p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #fff; /* Ajusta el color del texto en la sección */
+  }
+  
+  .section button {
+    padding: 16px 32px;
+    font-size: 20px;
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .section button:hover {
+    background-color: #e6005c;
+  }
+  
+  /* Estilos para la primera sección */
+  .section-1 .content-wrapper {
+    text-align: left;
+    margin-left: 100px; /* Alinear el contenido a la izquierda */
+  }
+  
+  .section-1 h1,
+  .section-1 p,
+  .section-1 button {
+    margin-right: 100px; /* Alinear el contenido a la izquierda */
+  }
+  
+  /* Estilos para la segunda sección */
+  .section-2 .content-wrapper {
+    text-align: right;
+    margin-right: 100px; 
+  }
+  

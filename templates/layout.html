@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Proyecto Flask</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ebrima&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="navbar">
+    <img src="https://static.vecteezy.com/system/resources/previews/002/378/022/original/woman-face-logo-free-vector.jpg" alt="Logo">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Tienda</a></li>
+      <li><a href="#">Informacion</a></li>
+      <li style="margin-right: 50px;"><a href="#">Mas</a></li>
+    </ul>
+  </div>
+
+  <!-- Aquí se define el bloque "content" -->
+  <div class="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
+</html>
